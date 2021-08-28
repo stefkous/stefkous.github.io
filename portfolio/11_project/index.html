@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>The Vibe of the City</title>
+    <meta name="description" content="A simple, whitespace, helvetica based portfolio theme.
+">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="/portfolio/11_project/">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost" rel="stylesheet">  
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <nav class="site-nav">
+
+      <div class="trigger">
+        <!-- dot.sk instead of blog -->
+        <a class="page-link" href="/">home</a>
+
+        
+          
+          <a class="page-link" href="/about/">Hello World!</a>
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/portfolio/">portfolio</a>
+          
+        
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">The Vibe of the City</h1>
+    <p class="post-meta">August 29, 2021 — 00:26</p>
+  </header>
+
+  <article class="post-content">
+    <div class="text_align_post">
+
+<body> 
+  <p style="color:DarkSlateGray;"><b>ABSTRACT</b></p>
+</body>
+
+<div class="text_align_post"> 
+
+Urban Vibrancy is the study associated with activity intensity, the diversity of land-use configurations, and the accessibility of a place. During our 3rd term our main research focus was to define Urban Vibrancy, find ways to accurately measure it and inform our design decisions from the conclusions. 
+
+<br /><br />
+
+<div class="keywords">
+<b>keywords</b>: #Python, #DataAnalysis, #DataVisualisation, #UrbanVibrancy
+</div>
+
+<div class="header-bar">
+	<hr />
+  <br />
+</div>
+
+<body> 
+  <p style="color:DarkSlateGray;"><b>URBAN VIBRANCY</b></p>
+</body>
+
+Urban Vibrancy is the study associated with activity intensity, the diversity of land-use configurations, and the accessibility of a place. During our 3rd term our main research focus was to define Urban Vibrancy, find ways to accurately measure it and inform our design decisions from the conclusions. 
+
+<br /><br />
+
+<body> 
+  <p style="color:DarkSlateGray;"><b>THE DATASET</b></p>
+</body>
+
+One of the indicators of Urban Vibrancy is the presence and the movement of people in a place. Our focus area is Sant Marti, one district of Barcelona, where the 22@ program is implemented. For this reason, the area contains activities of all kinds, from leisure to work to residency related. In order to understand the movement of people in the area we used GPS related data from November of 2019. There are entries for 7 whole days, from Monday, the 18th of November to Sunday the 24th of November in the dataset.
+
+The first intention was to understand how many people move in the study area. We visualized the number of people moving every day from 00:00 to 23:40. Time is separated every 10 minutes. 
+
+<div class="img_row_2">
+	<img class="col three" src="/img/vibeofthecity/gif1.gif" alt="" title="The weekly movement vibes of Saint Marti area" />
+</div>
+<div class="col three caption">
+	Peoples’ movement in Sant Marti during the week of 18th to 24th November 2019 | source: GPS related data | 
+    <br />access to full videos: <iframe width="695" height="391" src="https://www.youtube.com/embed/7kXKKsVV9ss?list=PLvwswcKeAWYXV8PCcHFOItSiuIwo8Emm9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+In addition, we wanted to understand better when this movement occurred. Below, it is shown how many people moved during the day (06:00 – 18:00) and night(18:00 – 06:00), for the 7 days of the week. 
+
+<div class="img_row_2">
+	<img class="col three" src="/img/vibeofthecity/daynight.jpg" alt="" title="Day and Night Movement in SaintMarti" />
+</div>
+
+From the diagram we can understand that people move more during Friday and the weekend, both at day and at night. The biggest percentage of people moving in the area was on Saturday during the day. 
+
+Finally, in order to understand the places where people move more, moving pandas has been used to identify specific trajectories and flows in the study area.
+(disclaimer: For better visualization, we used a dataset of 10 Ids. )
+
+<div class="img_row_2">
+	<img class="col three" src="/img/vibeofthecity/movement.gif" alt="" title="Mapping the trajectories in the area" />
+</div>
+
+<br /><br /><br />
+
+<body> 
+  <p style="color:DarkSlateGray;"><b>MAPPING THE STOPS</b></p>
+</body>
+
+Urban Vibrancy is not only about the presence of people but most importantly about the activity of people. Besides the good urban form, a place can be vibrant based on the mixture of activities that it contains. 
+
+<br /><br />
+
+Through the dataset we analyzed we could also identify the stops of people, and based on time we could categorize them on the reason behind the stop. Since our studio, in terms of people, focuses more on the urban vibrancy of the ground level we decided to filter the stops that are from 1 to 3h maximum. Most probably a stop of 1 to 3 hours identifies access to services, amenities or leisure. 
+
+<br /><br />
+
+On the same way as before, we also needed to understand where people stop. In the map below we can see where people tend to stop more for 1 to 3h. Based on our analysis, we can conclude that the most visited places are: 
+
+<br /><br />
+
+–During the weekend : Jardins de Josep Trueta, the center of Rambla del PobleNou, near Llacuna metro station and near Glories. 
+
+<br /><br />
+
+–During the week days: Jardins de Josep Trueta, the center of Rambla del PobleNou, Glories, Gran Via de les Corts Catalanes and the Industrial Park. However, in the map of the weekdays we can see that the concentration of people is more distributed, and in many cases it is around offices, nursery schools, sports centers etc. 
+
+<br /><br />
+
+<div class="img_row_2">
+	<img class="col three" src="/img/vibeofthecity/week.gif" alt="" title="Where people stop for 1 to 3h during the week | source: GPS related data, OSM" />
+</div>
+<div class="col three caption">
+	Where people stop for 1 to 3h during the week | source: GPS related data, OSM
+</div>
+
+<div class="img_row_2">
+	<img class="col three" src="/img/vibeofthecity/stops.gif" alt="" title="Where people stop for 1 to 3h during the week | source: GPS related data, OSM" />
+</div>
+<div class="col three caption">	Where people stop for 1 to 3h during the week | source: GPS related data, OSM
+</div>
+
+<br />
+
+Finally, we wanted to see why people stop at these places. In order to do that we wanted to check how close these places are to services and amenities or open spaces. To do so, we mapped the total heatmap of people stops in Sant Marti comparing it to the amenities that the area offers. As we can see, most of the amenities are near a small or big cluster of stops of people. In this way, we can conclude that our hypothesis on 1 to 3h can be validated from our analysis.
+
+<br /><br /><br /><br />
+
+<body> 
+  <p style="color:DarkSlateGray;"><b>CONCLUSIONS</b></p>
+</body>
+
+After our analysis, we can understand the vibe of the people in Sant Marti, for the specific dates. The flows and the stops actually give us a pretty whole picture on the how and the why of movement of people. As a next step on this project, we would like to expand our analysis for other days, even comparing it with data during and after the pandemic, to understand how this affected the flows of the people. Besides that, the conclusions we reached will be beneficiary for our studio project as well, where we develop metrics to measure efficiently Urban Vibrancy.
+
+Lastly, we believe that the most important conclusion from this class is that working with data can really help the part of designing and decision making. The tools we were introduced through the year are an important knowledge for data analysis and visualization.
+
+<br /><br /><br /><br />
+
+<b>References</b>
+<br />
+<b>1. <a href="https://anitagraser.github.io/movingpandas/" target="blank">Moving Pandas</a></b>
+</div>
+
+<br /><br />
+
+<div class="header-bar">
+	<hr />
+</div>
+
+<div class="keywords">
+
+<b>The Vibe of the City</b> is a project of IAAC,  Institute of Advanced Architecture of Catalonia developed at Master in City and Technology in 2020/21 by students: Arina Novikova, Kshama Patil, Simone Grasso, Sinay Coskun and Stephania Maria Kousoula and faculty: Diego Pajarito
+
+
+</div>
+
+</div>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+
+
+  </body>
+
+</html>
