@@ -79,7 +79,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .header-bar { left: 0px; top: 0px; position: relative; font-size: 15px; display: block; opacity: 0.75; width: 100%; text-align: center; padding-top: 25px; line-height: 3em; z-index: 25; }
 
-.header-bar h1 { color: #79b3a6; font-size: 60px; }
+.header-bar h1 { color: #79b3a6; font-size: 40px; }
 
 .header-bar h2 { font-size: 30px; }
 
