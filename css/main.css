@@ -9,7 +9,7 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { m
 /* Set theme color *************************/
 /************************************************************/
 /** Basic styling */
-body { font-family: "Jost", sans-serif; font-size: 16px; line-height: 1.7em; font-weight: 150px; color: #666; background-color: white; -webkit-text-size-adjust: 100%; }
+body { font-family: "Jost", sans-serif; font-size: 16px; line-height: 1.7em; font-weight: 150px; color: #636363; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
 p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 25px; }
@@ -32,7 +32,7 @@ li > ul, li > ol { margin-bottom: 0; }
 h1, h2, h3, h4, h5, h6 { font-weight: 80; }
 
 /** Links */
-a { color: #666; text-decoration: none; /* &:visited { color: darken($brand-color, 15%);  } */ }
+a { color: #636363; text-decoration: none; /* &:visited { color: darken($brand-color, 15%);  } */ }
 
 a:hover { color: #79b3a6; text-decoration: none; }
 
@@ -41,12 +41,12 @@ article a { color: #79b3a6; font-weight: 100; }
 article a:hover { text-decoration: none; }
 
 /** Blockquotes */
-blockquote { color: #666; border-left: 10px solid #dddddd; padding-left: 25px; font-size: 18px; font-style: italic; }
+blockquote { color: #636363; border-left: 10px solid #dddddd; padding-left: 25px; font-size: 18px; font-style: italic; }
 
 blockquote > :last-child { margin-bottom: 0; }
 
 /** Code formatting */
-pre, code { font-size: 15px; border-radius: 3px; background-color: black; }
+pre, code { font-size: 15px; border-radius: 3px; background-color: #fdfdfd; }
 
 code { padding: 1px 5px; }
 
@@ -63,7 +63,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .wrapper:before, .wrapper:after { content: ""; display: table; clear: both; }
 
 /** Site header   ********************************************************** */
-.site-header { border-bottom: 3px solid #dddddd; background-color: #fff; opacity: 0.75; position: fixed; left: 0px; top: 0px; height: 56px; width: 100%; z-index: 50; }
+.site-header { border-bottom: 3px solid #dddddd; background-color: white; opacity: 0.75; position: fixed; left: 0px; top: 0px; height: 56px; width: 100%; z-index: 50; }
 
 .site-title { font-size: 20px; line-height: 56px; letter-spacing: -1px; margin-bottom: 0; }
 
@@ -79,7 +79,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .header-bar { left: 0px; top: 0px; position: relative; font-size: 15px; display: block; opacity: 0.75; width: 100%; text-align: center; padding-top: 25px; line-height: 3em; z-index: 25; }
 
-.header-bar h1 { color: #344B47; font-size: 40px; }
+.header-bar h1 { color: #000000; font-size: 50px; font-family: 'Roboto', sans-serif; font-weight: medium; }
 
 .header-bar h2 { font-size: 30px; }
 
@@ -149,14 +149,14 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .thumbnail a { float: left; position: relative; width: 100%; height: relative; }
 
-.thumbnail a span { display: none; position: absolute; top: 0; left: 0; bottom: 5px; right: 0; background: rgba(92, 107, 104, 0.829); color: white; padding: 0px; text-align: center; font-weight: bold; }
+.thumbnail a span { display: none; position: absolute; top: 0; left: 0; bottom: 5px; right: 0; background: rgba(0, 0, 0, 0.85); color: white; padding: 0px; text-align: center; font-weight: absolute; }
 
-.thumbnail a:hover span { display: block; font-weight: bold; padding: 10px; color: white; font-family: 'Segoe UI', sans-serif; }
+.thumbnail a:hover span { display: block; font-weight: absolute; padding: 10px; color: white; font-family: 'Jost', sans-serif; }
 
-.thumbnail a span h1 { font-weight: 5px; }
+.thumbnail a span h1 { font-weight: 5px; font-size: 20px; }
 
 /**  Portfolio pages ********************************************************** */
-.blankbox { background: #79b3a6; opacity: 0.5; }
+.blankbox { background: #79b3a6; opacity: 1; }
 
 .img_row { height: 275px; width: 100%; overflow: hidden; box-sizing: border-box; padding: 5px; }
 
