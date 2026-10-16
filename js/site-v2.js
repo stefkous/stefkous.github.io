@@ -74,3 +74,55 @@ if (landing && siteHeader) {
   }, { rootMargin: '-100px 0px 0px 0px', threshold: 0 });
   observer.observe(landing);
 }
+
+// Reveal the bio beside the name on pointer hover, keyboard focus, or tap.
+const bioRow = document.querySelector('.hero-intro-row');
+const bioTrigger = document.getElementById('bio-trigger');
+const heroBio = document.getElementById('hero-bio');
+if (bioRow && bioTrigger && heroBio) {
+  let pinned = false;
+  let hovering = false;
+  let focused = false;
+  let focusDismissed = false;
+
+  function syncBio() {
+    const expanded = pinned || hovering || (focused && !focusDismissed);
+    heroBio.hidden = !expanded;
+    bioTrigger.setAttribute('aria-expanded', String(expanded));
+  }
+
+  bioRow.addEventListener('pointerenter', event => {
+    if (event.pointerType === 'mouse') { hovering = true; syncBio(); }
+  });
+  bioRow.addEventListener('pointerleave', event => {
+    if (event.pointerType === 'mouse') { hovering = false; syncBio(); }
+  });
+  bioRow.addEventListener('focusin', () => {
+    focused = true;
+    focusDismissed = false;
+    syncBio();
+  });
+  bioRow.addEventListener('focusout', () => queueMicrotask(() => {
+    focused = bioRow.contains(document.activeElement);
+    if (!focused) focusDismissed = false;
+    syncBio();
+  }));
+  bioTrigger.addEventListener('click', () => {
+    if (pinned) {
+      pinned = false;
+      if (focused) focusDismissed = true;
+    } else {
+      pinned = true;
+      focusDismissed = false;
+    }
+    syncBio();
+  });
+  bioTrigger.addEventListener('keydown', event => {
+    if (event.key === 'Escape') {
+      pinned = false;
+      hovering = false;
+      focusDismissed = true;
+      syncBio();
+    }
+  });
+}
