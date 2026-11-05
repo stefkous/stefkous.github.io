@@ -1,269 +1,137 @@
-<!DOCTYPE html>
-<html>
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Urban Vibes — Stephania Kousoula</title>
+<meta name="description" content="Using OpenCV and YOLOv5 to identify people, vehicles and street objects in video, then compare activity across streets in Barcelona.">
+<meta name="color-scheme" content="light dark"><meta name="theme-color" content="#f6f5f0">
+<link rel="canonical" href="https://stefkous.github.io/portfolio/10_project/">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script>try{const t=localStorage.getItem('sk-theme');document.documentElement.dataset.theme=t==='light'||t==='dark'?t:matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}catch{document.documentElement.dataset.theme=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}</script>
+<link rel="stylesheet" href="/css/site-v2.css"><script src="/js/theme.js" defer></script>
+<noscript><style>.company-tabs{display:none}.experience-panels [hidden]{display:block!important}.experience-panels article{margin-bottom:40px}</style></noscript>
+</head><body>
+<a class="skip-link" href="#main">Skip to content</a><header class="site-header"><nav class="container nav" aria-label="Main navigation"><a class="logo" href="/#home" aria-label="Stephania Kousoula home">SK<span>.</span></a><div class="nav-links"><a href="/#experience">Experience</a><a href="/#awards">Awards &amp; Publications</a><a href="/#projects">Projects</a><a href="/#education">Education</a><a href="/#contact">Contact</a></div><button class="theme-toggle" type="button" aria-label="Switch colour theme" hidden><span aria-hidden="true">◐</span></button></nav></header>
+<main id="main" class="container case-page"><a class="back-link" href="/#projects">← All projects</a>
+<header class="case-hero"><p class="eyebrow">Urban Vibes | Academic team project · IAAC 2020–21</p><h1>Understanding street activity with video<span>.</span></h1><p class="case-lead">Using OpenCV and YOLOv5 to identify people, vehicles and street objects in video, then compare activity across streets in Barcelona.</p><div class="project-stack"><span>OpenCV</span><span>YOLOv5</span><span>Object detection</span></div></header>
+<figure class="case-cover"><img src="/img/previews/urban-vibes.jpg" alt="Object detection output from the Urban Vibes study" loading="lazy" decoding="async" width="900" height="600"><figcaption>Original project visual · Urban Vibes</figcaption></figure>
+<div class="case-sections"><section class="case-section"><p class="eyebrow">01 | Question</p><h2>What we explored</h2><p>How can we use street video to understand and compare activity in different places?</p></section><section class="case-section"><p class="eyebrow">02 | Method</p><h2>How it worked</h2><p>Use object detection to identify people, vehicles and street objects in video. Group the observations into categories and compare four selected streets.</p><ol class="workflow" aria-label="Project workflow"><li><span class="workflow-number">01</span>Street video</li><li><span class="workflow-number">02</span>Object detection</li><li><span class="workflow-number">03</span>Activity categories</li></ol></section><section class="case-section"><p class="eyebrow">03 | Output &amp; scope</p><h2>What came out of it</h2><p>Visual comparisons of street activity, developed as part of the Phoenix Poblenou team project. The work explores a method rather than a finished monitoring tool.</p></section></div>
+<section class="case-section"><p class="eyebrow">04 | Project documentation</p><h2>Research, visuals &amp; credits</h2><p class="section-intro">Explore the original team research, project images, references and credits.</p><div class="research-documentation">
 
-    <title>URBAN VIBES</title>
-    <meta name="description" content="Stefania-Maria Kousoula | Urban & Strategy Planner | Porfolio
-">
-
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="/portfolio/10_project/">
-
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost" rel="stylesheet">  
-</head>
-
-
-  <body>
-
-    <header class="site-header">
-
-  <div class="wrapper">
-
-    <nav class="site-nav">
-
-      <div class="trigger">
-        <!-- STEFΛNIΛ KOUSOULΛ instead of blog -->
-        <a class="page-link" href="/">home</a>
-
-        
-          
-          <a class="page-link" href="/about/">about</a>
-          
-        
-          
-        
-          
-        
-          
-          <a class="page-link" href="/portfolio/">portfolio</a>
-          
-        
-
-      </div>
-    </nav>
-
-  </div>
-
-</header>
+  <h3>ABSTRACT</h3>
 
 
 
-    <div class="page-content">
-      <div class="wrapper">
-        <div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">URBAN VIBES</h1>
-    <h5 class="post-description">Using openCV to measure Urban Vibrancy</h5>
-  </header>
+Urban vibrancy is the study concerning the observation and analysis of the connection and communication between urban entities, including people. It is externally manifested by dynamic changes in the spatial dimension.
 
-  <article class="post-content">
-    <body> 
-  <p style="color:PowderBlue;"><b>ABSTRACT</b></p>
-</body>
+<br><br>Urban Vibes project, linked with the <a href="/portfolio/01_project/" target="_blank" rel="noopener noreferrer">Phoenix Poblenou</a> project is making use of OpenCV libraries in order to measure and analyse the Urban Vibrancy of places in the City of Barcelona.
 
-<div class="text_align_post"> 
+<br><br><b>keywords</b>: #OpenCV, #ComputationalDesign, #UrbanPlanningTools
 
-Urban vibrancy is the study concerning the observation and analysis of the connection and communication between urban entities, including people. It is externally manifested by dynamic changes in the spatial dimension. 
 
-<br /><br />
 
-Urban Vibes project, linked with the <a href="https://stefkous.github.io/portfolio/01_project/" target="blank">Phoenix Poblenou</a> project is making use of OpenCV libraries in order to measure and analyse the Urban Vibrancy of places in the City of Barcelona.  
-
-<br /><br />
-
-<div class="keywords">
-<b>keywords</b>: #OpenCV, #ComputationalDesign, #UrbanPlanningTools 
-</div>
-
-<div class="header-bar">
 	<hr />
   <br />
-</div>
 
-<div class="text_align_post">
 
-<body> 
-  <p style="color:PowderBlue;"><b>ANALYSIS METHODOLOGY</b></p>
-</body>
 
-As the main focus of this study – which is one of the methods of analysis for our studio project on measuring and promoting urban vibrancy in Poblenou District – morphological metrics will be addressed as main parameters, since they serve to foster and prolong urban vibrancy. Those metrics, in fact, have been used only for measuring the vibrancy of the built environment. As another layer of analysis, in order to measure the vibrancy of the ground level, site visits have been conducted in the light of the predetermined parameters. In the last phase of the analysis, footfall and twitter data were used to better interpret physical and relational inspections on built environment and ground level. 
 
-<br /><br />
-<img class="img_row_2" src="/img/urbanvibe/methodology.gif" alt="" title="Methodology" />
 
-<br /><br /><br /><br />
+  <h3>ANALYSIS METHODOLOGY</h3>
 
-<body> 
-  <p style="color:PowderBlue;"><b>GROUND LEVEL VIBRANCY</b></p>
-</body>
+
+As the main focus of this study – which is one of the methods of analysis for our studio project on measuring and promoting urban vibrancy in Poblenou District – morphological metrics will be addressed as main parameters, since they serve to foster and prolong urban vibrancy. Those metrics, in fact, have been used only for measuring the vibrancy of the built environment. As another layer of analysis, in order to measure the vibrancy of the ground level, site visits have been conducted in the light of the predetermined parameters. In the last phase of the analysis, footfall and twitter data were used to better interpret physical and relational inspections on built environment and ground level.
+
+<br><br><img loading="lazy" decoding="async" class="img_row_2" src="/img/urbanvibe/methodology.gif" alt="Methodology" title="Methodology" />
+
+<br><br><h3>GROUND LEVEL VIBRANCY</h3>
+
 
 Within the scope of Urban Panopticons, object detection is used to observe and measure vibrancy on the ground level, which is the second stage of our analysis in order to complete the analysis in a much more practical way compared to the site visits. The observations to be made on vibrancy of ground level are divided into 4 main titles:
 
-<br /><br />
-<img class="img_row_2" src="/img/urbanvibe/Intro.gif" alt="" title="Ground Level Vibrancy metrics" /> 
-<br /><br />
+<br><br><img loading="lazy" decoding="async" class="img_row_2" src="/img/urbanvibe/Intro.gif" alt="Ground Level Vibrancy metrics" title="Ground Level Vibrancy metrics" />
+<br><br>For the mixture of uses, bike lanes, occupation of cars, pedestrian pathways and other occupants of the street section, such as restaurant tables/chairs, were considered.
 
-For the mixture of uses, bike lanes, occupation of cars, pedestrian pathways and other occupants of the street section, such as restaurant tables/chairs, were considered. 
+<br><br>For the existence of items; benches, trees, playgrounds and other specialized items, such as outdoor sport equipment, were observed.
 
-<br /><br />
-
-For the existence of items; benches, trees, playgrounds and other specialized items, such as outdoor sport equipment, were observed. 
-
-<br /><br />
-
-For the frontage activeness, observations were made on two sides of the street section, separately and they are graded from highest (active in-between) to lowest (impermeable) activeness levels. 
+<br><br>For the frontage activeness, observations were made on two sides of the street section, separately and they are graded from highest (active in-between) to lowest (impermeable) activeness levels.
 For the mixture of activities; people’s behaviors have been observed mainly for walking, doing sports, standing and eating/drinking on the street.
 
-<br /><br /><br /><br />
+<br><br><h3>YOLOV5 QUALIFICATION</h3>
 
-<body> 
-  <p style="color:PowderBlue;"><b>YOLOV5 QUALIFICATION</b></p>
-</body>
 
 By using Yolov5, we are able to detect some of these parameters (people, bikes, cars, motorcycles, traffic lights/signs, umbrellas, chairs, benches etc.) explained before since they are perfectly matching. And to start object detection from videos, all possible objects are classified under three main categories which are people, mobility and urban equipment.
 
-<br /><br />
-<img class="img_row_2" src="/img/urbanvibe/diagram1.jpg" alt="" title="Categorization" /> 
-<br /><br />
+<br><br><img loading="lazy" decoding="async" class="img_row_2" src="/img/urbanvibe/diagram1.jpg" alt="Categorization" title="Categorization" />
+<br><br><h3>YOLOV5@POBLENOU</h3>
 
-<br /><br /><br /><br />
-
-<body> 
-  <p style="color:PowderBlue;"><b>YOLOV5@POBLENOU</b></p>
-</body>
 
 For the analysis of our area we identified 4 streets that we are going to work with: Rambla del PobleNou, Carrer de Bilbao, Carrer de Taulat and Carrer de Perello (divided in 2 parts). Rambla del PobleNou is chosen for the number of people that it attracts daily since it is the central pedestrian street of the area. Carrer de Bilbao is a street parallel to Rambla, so it is chosen to understand and compare the Urban Vibrancy levels of two streets similar in size and direction but with different amenities and services. FInally, Carrer de Taulat and Carrer de Perello were chosen as two smaller streets perpendicular to Rambla and Carrer de Bilbao, to understand how the two big streets are affecting them.
 
-<br /><br />
-<img class="img_row_2" src="/img/urbanvibe/streets.jpg" alt="" title="Map of Roads" /> 
-<br /><br />
-<br /><br />
+<br><br><img loading="lazy" decoding="async" class="img_row_2" src="/img/urbanvibe/streets.jpg" alt="Map of Roads" title="Map of Roads" />
+<br><br><h3>PLOTTING THE VIBES</h3>
 
-<body> 
-  <p style="color:PowderBlue;"><b>PLOTTING THE VIBES</b></p>
-</body>
 
 We started by detecting objects from the video of Rambla del PobleNou using Yolov5 identifying our setup elements. The Categories are marked by color. We also created an animation of an histoplot showing the count of each category per frame. The final plotting from our python script includes the video with the detection points and the histoplot, showing “the pulse” of the street.
 
-<br /><br />
-<iframe width="100%" height="100%" src="https://www.youtube.com/embed/h2m62we5IAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-<br /><br /><br /><br />
+<br><br><iframe loading="lazy" width="100%" height="100%" src="https://www.youtube.com/embed/h2m62we5IAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<br><br><h3>LEFT AND RIGHT DETECTION</h3>
 
-<body> 
-  <p style="color:PowderBlue;"><b>LEFT AND RIGHT DETECTION</b></p>
-</body>
 
-After performing these measurements for the roads, and while the total road analysis shows us how vibrant a road is in total, we still need to investigate the relationship between the vibrancy of the ground level and the built environment. For this reason, we divided our video frame into 2 parts, left and right. In this way, we were able to add a new level of analysis and understand the differences between the two sides of the street by relating them to the elements of the built environment, such as amenities, services, etc. 
+After performing these measurements for the roads, and while the total road analysis shows us how vibrant a road is in total, we still need to investigate the relationship between the vibrancy of the ground level and the built environment. For this reason, we divided our video frame into 2 parts, left and right. In this way, we were able to add a new level of analysis and understand the differences between the two sides of the street by relating them to the elements of the built environment, such as amenities, services, etc.
 
-<br /><br />
-<img class="img_row_2" src="/img/urbanvibe/leftright.jpg" alt="" title="Left and Right Frame Division" /> 
-<br /><br />
+<br><br><img loading="lazy" decoding="async" class="img_row_2" src="/img/urbanvibe/leftright.jpg" alt="Left and Right Frame Division" title="Left and Right Frame Division" />
+<br><br><iframe loading="lazy" width="100%" height="100%" src="https://www.youtube.com/embed/HVFVbeDVLw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<br><br><iframe loading="lazy" width="100%" height="100%" src="https://www.youtube.com/embed/U4krt_F3Z4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<br><br><iframe loading="lazy" width="100%" height="100%" src="https://www.youtube.com/embed/FI7hZ00Pmw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<br><br><h3>MAPPING THE RESULTS</h3>
 
-<br /><br />
-<iframe width="100%" height="100%" src="https://www.youtube.com/embed/HVFVbeDVLw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-<br /><br />
-
-<br /><br />
-<iframe width="100%" height="100%" src="https://www.youtube.com/embed/U4krt_F3Z4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-<br /><br />
-
-<br /><br />
-<iframe width="100%" height="100%" src="https://www.youtube.com/embed/FI7hZ00Pmw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-<br /><br /><br /><br />
-
-<body> 
-  <p style="color:PowderBlue;"><b>MAPPING THE RESULTS</b></p>
-</body>
 
 Once the video has been run through Python and Yolov 5.
 We processed the information of the CSV files output from python to Grasshopper, with the aim of mapping, visualizing and comparing the results with the morphological characteristics of Poblenou.
 
-<br /><br />
-<img class="img_row_2" src="/img/urbanvibe/leftright.gif" alt="" title="Left and Right Urban Vibrancy Levels" /> 
-<br /><br />
-
-Below are the results obtained on the right and left of the street on the Rambla of PobleNou.
+<br><br><img loading="lazy" decoding="async" class="img_row_2" src="/img/urbanvibe/leftright.gif" alt="Left and Right Urban Vibrancy Levels" title="Left and Right Urban Vibrancy Levels" />
+<br><br>Below are the results obtained on the right and left of the street on the Rambla of PobleNou.
 The height of the spectrum describes the amount of people detected in each frame and the color gradient describes the amount of urban elements detected in the same frame.
 
-<br /><br />
+<br><br>For the Rambla, it is interesting to see that the spatial distribution of people and urban elements is continuous, except for the crossing points.
 
-For the Rambla, it is interesting to see that the spatial distribution of people and urban elements is continuous, except for the crossing points.
+<br><br>But we can also see the difference between the two sides, the spectrum of the right side is less vivid than the left one and at the same time most of the aggregation spaces, including restaurants are on the left side.
 
-<br /><br />
-
-But we can also see the difference between the two sides, the spectrum of the right side is less vivid than the left one and at the same time most of the aggregation spaces, including restaurants are on the left side.
-
-<br /><br />
-<img class="img_row_2" src="/img/urbanvibe/Rambla.jpg" alt="" title="Urban Vibrancy Levels on Rambla del PobleNou" /> 
-<br /><br />
-
-The situation is different for Carrer del Bilbao if we compare it with Rambla.
+<br><br><img loading="lazy" decoding="async" class="img_row_2" src="/img/urbanvibe/Rambla.jpg" alt="Urban Vibrancy Levels on Rambla del PobleNou" title="Urban Vibrancy Levels on Rambla del PobleNou" />
+<br><br>The situation is different for Carrer del Bilbao if we compare it with Rambla.
 One of the reasons is surely the use of the street, mainly oriented to cars, which reduces its permeability. The concentration of people is in fact more fragmented, and this is also due to the reduced presence of active services at that time of day.
 
-<br /><br />
-<img class="img_row_2" src="/img/urbanvibe/bilbao.jpg" alt="" title="Urban Vibrancy Levels on Carrer de Bilbao" /> 
-<br /><br />
+<br><br><img loading="lazy" decoding="async" class="img_row_2" src="/img/urbanvibe/bilbao.jpg" alt="Urban Vibrancy Levels on Carrer de Bilbao" title="Urban Vibrancy Levels on Carrer de Bilbao" />
+<br><br>On Carrer de Taulat we can see a strong discontinuity. but from which we can detect a high presence of people only near restaurants or benches.
 
-On Carrer de Taulat we can see a strong discontinuity. but from which we can detect a high presence of people only near restaurants or benches.
+<br><br><img loading="lazy" decoding="async" class="img_row_2" src="/img/urbanvibe/taulat.jpg" alt="Urban Vibrancy Levels on Carrer de Taulat" title="Urban Vibrancy Levels on Carrer de Taulat" />
+<br><br><h3>DEEP SORT</h3>
 
-<br /><br />
-<img class="img_row_2" src="/img/urbanvibe/taulat.jpg" alt="" title="Urban Vibrancy Levels on Carrer de Taulat" /> 
-<br /><br /><br /><br />
-
-<body> 
-  <p style="color:PowderBlue;"><b>DEEP SORT</b></p>
-</body>
 
 Whilst our analysis and visualizations gave us some important information, we wanted to go a step further and use open Source implementation of DeepSort to increase the accuracy and to count the number of objects with a specific id.
 In this way, the same person is not counted multiple times through the whole process of detecting.
 With DeepSort we worked with 3 streets, Rambla de PobleNou,  Carrer de Bilbao and Carrer de Taulat, where there were more people appearing in the video.
 
-<br /><br />
-<img class="img_row_2" src="/img/urbanvibe/DeepSort.gif" alt="" title="Deep Sort Analysis" /> 
-<br /><br /><br /><br />
+<br><br><img loading="lazy" decoding="async" class="img_row_2" src="/img/urbanvibe/DeepSort.gif" alt="Deep Sort Analysis" title="Deep Sort Analysis" />
+<br><br><h3> NEXT STEPS</h3>
 
-<body> 
-  <p style="color:PowderBlue;"><b> NEXT STEPS</b></p>
-</body>
 
 Whilst our analysis and visualizations gave us some important information, we wanted to go a step further and use open Source implementation of DeepSort to increase the accuracy and to count the number of objects with a specific id.
 In this way, the same person is not counted multiple times through the whole process of detecting.
 With DeepSort we worked with 3 streets, Rambla de PobleNou,  Carrer de Bilbao and Carrer de Taulat, where there were more people appearing in the video.
 
-<br /><br />
-<img class="img_row_2" src="/img/urbanvibe/next-steps.gif" alt="" title="Next Steps?" /> 
-<br /><br />
-</div>
+<br><br><img loading="lazy" decoding="async" class="img_row_2" src="/img/urbanvibe/next-steps.gif" alt="Next Steps?" title="Next Steps?" />
+<br><br><hr />
 
-<div class="header-bar">
-	<hr />
-</div>
 
-<div class="keywords">
+
 
 <b>Urban Vibes</b>,is a project of IAAC, Institute for Advanced Architecture of Catalonia developed at Master in City &amp; Technology in 2020/21 by students: Arina Novikova, Kshama Patil, Sinay Coskun, Simone Grasso, Stephania-Maria Kousoula and faculty: Also Sollazzo, Iacopo Neri, Soroush Garivani
 
-</div>
-
-</div>
-
-  </article>
-
-</div>
-
-      </div>
-    </div>
 
 
 
-  </body>
 
-</html>
+  </div></section>
+<a class="back-link" href="/#projects">← Back to selected projects</a></main>
+<footer class="container"><span>© Stephania Kousoula</span><a href="mailto:stefkouss@gmail.com">Get in touch ↗</a></footer></body></html>
