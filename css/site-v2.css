@@ -84,3 +84,7 @@ main.container>section{border-bottom:1px solid var(--line)}
 .rebus-launch-link{display:inline-flex;align-items:center;gap:20px;border:1px solid var(--orange);padding:10px 16px;color:var(--text);font-size:13px;transition:background .2s,color .2s}
 .rebus-launch-link:hover{background:var(--orange);color:var(--bg)}
 .rebus-launch .section-intro{font-size:12px}
+.program-note,.language-note strong{color:var(--orange)}
+.program-note{font-size:11px;color:var(--muted);margin-top:12px}
+.language-note{margin:32px 0 0;color:var(--muted);font-size:12px}
+@media(max-width:640px){.language-note{line-height:1.9}}
